@@ -19,6 +19,7 @@ import data_parse
 from data_parse import get_sample
 
 np.set_printoptions(suppress=True)
+print("~~~ANN given details of an airfoil, finds the sound pressure level~~~")
 
 trainX, trainY, testX, testY, maxX, maxY = data_parse.main()
 
@@ -76,7 +77,6 @@ class Neural_Network:
 NN = Neural_Network()
 l = trainX.shape[0]
 n = 32
-print("~~~ANN given details of an airfoil, finds the sound pressure level~~~")
 print("Training...")
 for j in range(5000):
     index = 0
